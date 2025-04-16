@@ -1,0 +1,33 @@
+{
+  "name": "@demo/cms-admin",
+  "private": true,
+  "type": "module",
+  "version": "0.0.1",
+  "main": "./nuxt.config.ts",
+  "scripts": {
+    "dev:cleanup": "nuxi cleanup .playground",
+    "dev": "nuxi dev .playground",
+    "dev:prepare": "nuxt prepare .playground",
+    "build": "nuxt build .playground",
+    "generate": "nuxt generate .playground",
+    "preview": "nuxt preview .playground",
+    "upgrade": "nuxi upgrade --force",
+    "lint": "eslint .",
+    "format": "eslint --fix ."
+  },
+  "dependencies": {
+    "@demo/integration-cloudflare": "workspace:*",
+    "@demo/ui": "workspace:*",
+    "@demo/core-admin": "workspace:*",
+    "@nuxt/eslint": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "eslint": "latest",
+    "nuxt": "latest",
+    "typescript": "latest",
+    "vite-plugin-eslint2": "latest",
+    "vue": "latest"
+  }
+}

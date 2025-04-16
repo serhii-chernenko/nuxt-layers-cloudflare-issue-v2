@@ -1,0 +1,15 @@
+.DS_Store
+.idea
+.vscode
+.editorconfig
+.nuxt
+.output
+.data
+.wrangler
+wrangler.json
+.nuxtrc
+.npmrc
+.eslintcache
+node_modules
+dist
+*.lock

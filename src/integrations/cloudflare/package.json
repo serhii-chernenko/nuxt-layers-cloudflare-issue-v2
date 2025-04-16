@@ -1,0 +1,28 @@
+{
+  "name": "@demo/integration-cloudflare",
+  "private": true,
+  "type": "module",
+  "version": "0.0.1",
+  "main": "./nuxt.config.ts",
+  "scripts": {
+    "cleanup": "nuxi cleanup .playground",
+    "dev": "nuxi dev .playground",
+    "dev:prepare": "nuxt prepare .playground",
+    "build": "nuxt build .playground",
+    "generate": "nuxt generate .playground",
+    "preview": "nuxt preview .playground",
+    "lint": "eslint .",
+    "format": "eslint --fix ."
+  },
+  "dependencies": {
+    "@nuxt/eslint": "latest",
+    "nitro-cloudflare-dev": "latest"
+  },
+  "devDependencies": {
+    "eslint": "latest",
+    "nuxt": "latest",
+    "typescript": "latest",
+    "vite-plugin-eslint2": "latest",
+    "vue": "latest"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "nuxt-layers-cloudflare-issue-v2",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serhii-chernenko/nuxt-layers-cloudflare-issue-v2"
+  },
+  "author": "Serhii Chernenko",
+  "engines": {
+    "bun": ">=1.2.9"
+  },
+  "workspaces": [
+    "src/integrations/**",
+    "src/layers/**",
+    "src/apps/*"
+  ],
+  "scripts": {
+    "dev:cleanup": "bun --filter '*' dev:cleanup",
+    "dev:prepare": "bun --filter '*' dev:prepare",
+    "upgrade": "bun --filter '*' upgrade",
+    "build:app": "bun dev:prepare && bun --filter '@demo/app' build",
+    "dev:app": "bun --elide-lines 0 --filter '@demo/app' dev",
+    "lint": "eslint src/",
+    "format": "eslint --fix src/",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "eslint": "latest",
+    "husky": "latest"
+  }
+}

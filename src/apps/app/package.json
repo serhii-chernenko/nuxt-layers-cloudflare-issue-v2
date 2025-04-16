@@ -1,0 +1,31 @@
+{
+  "name": "@demo/app",
+  "type": "module",
+  "scripts": {
+    "dev:cleanup": "nuxi cleanup",
+    "dev:prepare": "nuxt prepare",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "upgrade": "nuxi upgrade --force",
+    "lint": "eslint .",
+    "format": "eslint --fix ."
+  },
+  "dependencies": {
+    "@demo/ui": "workspace:*",
+    "@demo/core-admin": "workspace:*",
+    "@demo/cms-admin": "workspace:*",
+    "@nuxt/eslint": "latest",
+    "eslint": "latest",
+    "nuxt": "latest",
+    "typescript": "latest",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "vite-plugin-eslint2": "latest",
+    "wrangler": "latest"
+  }
+}
